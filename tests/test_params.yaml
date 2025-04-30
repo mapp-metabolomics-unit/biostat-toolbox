@@ -1,0 +1,12 @@
+actions:
+  scale_method: "pareto" # 'autoscale' or 'pareto' or 'none'
+  ponderate_data:
+    run: FALSE
+    factor_name: ""
+  prune_data:
+    threshold:
+  run_PLSDA: TRUE
+  calculate_multi_series_fc: FALSE
+  run_fc_treemaps: TRUE
+  run_with_gap_filled: FALSE
+  run_cytoscape_connector: FALSE

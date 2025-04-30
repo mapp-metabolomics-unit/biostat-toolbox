@@ -10,3 +10,15 @@ dependencies = [
     "pyyaml>=6.0.2",
     "requests>=2.32.3",
 ]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = ["pytest>=8.3.5"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "*.py"
+python_functions = "test_*"
